@@ -5,7 +5,7 @@ import Cookies from 'js-cookie'
 import './index.css'
 
 const Header = props => {
-  const onClickLogout = () => {
+  const onClickLogoutButton = () => {
     const {history} = props
     Cookies.remove('jwt_token')
     history.replace('/ebank/login')
@@ -18,7 +18,7 @@ const Header = props => {
         src="https://assets.ccbp.in/frontend/react-js/ebank-logo-img.png"
         alt="website logo"
       />
-      <button className="logout-button" type="button" onClick={onClickLogout}>
+      <button className="logout-button" type="button" onClick={onClickLogoutButton}>
         Logout
       </button>
     </nav>
