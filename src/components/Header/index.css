@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  width: 130px;
+}
+
+.logout-button {
+  height: 36px;
+  width: 70px;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto';
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .logo {
+    width: 240px;
+  }
+  .logout-button {
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+  }
+}

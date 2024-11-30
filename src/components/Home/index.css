@@ -1,0 +1,38 @@
+.main-app-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #152850;
+  min-height: 100vh;
+  padding: 36px;
+  max-width:1100px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 100vh;
+}
+
+.card {
+  width: 90%;
+}
+
+.heading {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 48px;
+  }
+  .card {
+    width: 60%;
+  }
+}
