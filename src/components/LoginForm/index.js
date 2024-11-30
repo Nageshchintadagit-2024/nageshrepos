@@ -48,7 +48,7 @@ class LoginForm extends Component {
     this.setState({userId: event.target.value})
   }
 
-  onChangePassword = event => {
+  onChangePin = event => {
     this.setState({pin: event.target.value})
   }
 
@@ -91,7 +91,7 @@ class LoginForm extends Component {
                 id="pin"
                 className="input"
                 value={pin}
-                onChange={this.onChangePassword}
+                onChange={this.onChangePin}
                 placeholder="Enter PIN"
               />
             </div>
